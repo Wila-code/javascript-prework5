@@ -3,9 +3,9 @@
 function getMoveName(argMoveId){
     if(argMoveId == 1){
     return 'kamień';
-    } else if (argMoveId == 2){
+    } else if(argMoveId == 2){
     return 'papier';
-    } else if (argMoveId == 3){
+    } else if(argMoveId == 3){
     return 'nożyce';
     } else
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
@@ -29,6 +29,7 @@ function displayResult(argComputerMove, argPlayerMove) {
       return 'Ty przegrywasz!';
   } else return 'Nieznany ruch! Wybierz ponownie!';
 }
+
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('Wylosowana liczba to: ' + randomNumber);
