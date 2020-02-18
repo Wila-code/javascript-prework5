@@ -1,6 +1,7 @@
-function playGame(playerInput) {
+{
+const playGame = function (playerInput) {
   clearMessages();
-  function getMoveName(argMoveId){
+  const getMoveName = function (argMoveId){
       if(argMoveId == 1){
       return 'kamień';
       } else if(argMoveId == 2){
@@ -13,7 +14,7 @@ function playGame(playerInput) {
     }
   }
 
-  function displayResult(argComputerMove, argPlayerMove) {
+  const displayResult = function (argComputerMove, argPlayerMove) {
     if(argComputerMove == argPlayerMove){
         return 'Remis!';
     } else if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
@@ -57,3 +58,4 @@ function playGame(playerInput) {
   document.getElementById('play-scissors').addEventListener('click', function(){
     (playGame(3));
   });
+}
